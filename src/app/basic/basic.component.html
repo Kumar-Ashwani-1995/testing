@@ -1,0 +1,29 @@
+<p>basic works!</p>
+<hr>
+<div *ngIf="boolValue then trueVal; else falseVal">
+
+</div>
+<ng-template #trueVal>
+    <span class="true">
+        Value is true
+    </span>
+</ng-template>
+<ng-template #falseVal>
+    
+    <span class="false">
+        Value is false
+    </span>
+</ng-template>
+<hr>
+<div class="container">
+    <div class="post-element" *ngFor="let a of arr">
+        Id :        <strong>{{a.id}}                 </strong>      <br>
+        <span class="post-title">
+        Title:{{a.title}}    
+        </span>
+        <br>
+        Body :      <strong>{{a.body}}               </strong>      <br>
+        User ID :   <strong>{{a.userId}}             </strong>      <br>
+        
+    </div>
+</div>
